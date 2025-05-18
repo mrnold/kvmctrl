@@ -1,0 +1,14 @@
+[package]
+name = "kvmctrl-cli"
+version = "0.0.1"
+edition = "2021"
+
+[dependencies]
+kvmctrl = { path = "../kvmctrl" }
+clap = { version = "4.4.11", features = ["derive"]}
+simple_logger = "4.3.0"
+log = "0.4.20"
+
+[[bin]]
+name = "kvmctrl"
+path = "src/main.rs"
